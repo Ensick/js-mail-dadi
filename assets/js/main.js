@@ -11,8 +11,6 @@
 
 let listaemail = ["fede.censi96@gmail.com" , "marco96@gmail.com" , "kevin96@gmail.com"]
 
-// console.log(listaemail)
-
 let scriviemail = document.getElementById("email")
 
 let verifica =  document.getElementById("verifica")
@@ -24,8 +22,8 @@ function controllaEmail(){
    
    scriviemail.push
 
-
    let conferma = false
+
 
    for (let x = 0; x < listaemail.length; x++){
 
@@ -44,10 +42,37 @@ function controllaEmail(){
    }else{
 
         verifica.innerText = `Non sei già registrato!`
-        
+
    }
 
-   
+}
+
+// ESERCIZIO-DADI
+
+
+function calcoloDati(){
+
+    let numeroUtente = Math.floor(Math.random() * 6 + 1 )
+
+    let numeroAi = Math.floor(Math.random() * 6 + 1 )
+    
+    document.getElementById("numeroUtente").innerText = numeroUtente
+
+    document.getElementById("numeroAi").innerText = numeroAi
+
+    if(numeroUtente > numeroAi){
+
+        document.getElementById("risultato").innerText = `Hai Vinto !!`
+
+    }else if (numeroUtente == numeroAi){
+
+        document.getElementById("risultato").innerText = `Pareggio`
+
+    }else{
+
+        document.getElementById("risultato").innerText = `Hai perso :(`
+        
+    }
 
 }
 
