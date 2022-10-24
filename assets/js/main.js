@@ -49,6 +49,9 @@ function controllaEmail(){
 
 // ESERCIZIO-DADI
 
+let counterSconfitte = 0
+
+let counterVittorie = 0
 
 function calcoloDati(){
 
@@ -62,6 +65,10 @@ function calcoloDati(){
 
     if(numeroUtente > numeroAi){
 
+        counterVittorie = counterVittorie + 1
+
+        document.getElementById("vittorie").innerText = `${counterVittorie}`
+
         document.getElementById("risultato").innerText = `Hai Vinto !!`
 
     }else if (numeroUtente == numeroAi){
@@ -69,6 +76,10 @@ function calcoloDati(){
         document.getElementById("risultato").innerText = `Pareggio`
 
     }else{
+
+        counterSconfitte = counterSconfitte + 1
+
+        document.getElementById("sconfitte").innerText = `${counterSconfitte}`
 
         document.getElementById("risultato").innerText = `Hai perso :(`
         
