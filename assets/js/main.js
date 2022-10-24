@@ -9,8 +9,46 @@
 // scrivere quante partite ha vinto il giocatore
 // scrivere quante partite ha vinto il computer
 
-let listaemail = ["fede.censi@gmail.com" , "marco96@gmail.com" , "kevin96@gmail.com"]
+let listaemail = ["fede.censi96@gmail.com" , "marco96@gmail.com" , "kevin96@gmail.com"]
 
-let scriviemail = document.getElementById("scriviemail")
+// console.log(listaemail)
+
+let scriviemail = document.getElementById("email")
+
+let verifica =  document.getElementById("verifica")
+
+
+function controllaEmail(){
+
+   scriviemail.value
+   
+   scriviemail.push
+
+
+   let conferma = false
+
+   for (let x = 0; x < listaemail.length; x++){
+
+    if(listaemail[x] === scriviemail.value){
+
+        conferma = true
+        console.log("sei gia registrato")
+    }
+
+   }
+
+   if(conferma == true){
+
+        verifica.innerText = `Sei già registrato!`
+
+   }else{
+
+        verifica.innerText = `Non sei già registrato!`
+        
+   }
+
+   
+
+}
 
 
