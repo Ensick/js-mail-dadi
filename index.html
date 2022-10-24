@@ -10,53 +10,62 @@
 </head>
 <body>
 
-    <div>
-        <h2>Esercizio Email</h2>
+    <div class="container p-5">
 
-        <form action="">
-            <input id="email" type="text" placeholder="La tua email">
-            <button onclick="controllaEmail(); return false" >Registrati</button>
-        </form>
+        <div class="text-center mb-5">
+            <h2 class="mb-4">Esercizio Email</h2>
     
-        <h4 id="verifica"></h4>
-    </div>
-
-    <div class="container">
-
-        <h2 class="text-center">Esercizio Dadi</h2>
-
-        <div class="cont-dadi">
-
-            <div>
-                <h3>Numero giocatore:</h3>
-                <span id="numeroUtente"></span>
-            </div>
-
-            <div>
-                <button class="btn btn-primary" onclick="calcoloDati(); return false">Inizia</button>
-                <h2 id="risultato"></h2>
-            </div>
-           
-            <div>
-                <h3>Numero AI</h3>
-                <span id="numeroAi"></span>
-            </div>
-
+            <form action="">
+                <input class="ms-h" id="email" type="text" placeholder="La tua email">
+                <button class="btn btn-light " onclick="controllaEmail(); return false" >Registrati</button>
+            </form>
+        
+            <h4 class="mt-4" id="verifica"></h4>
         </div>
-
+    
         <div>
-            <div>
-                <h3>Vittorie</h3>
-                <span id="vittorie"></span>
+    
+            <h2 class="text-center mb-5">Esercizio Dadi</h2>
+    
+            <div class="d-flex justify-content-between align-items-center mb-5">
+    
+                <div class="ms-w text-center">
+                    <h3 class="mb-4">Numero giocatore:</h3>
+                    <h4 id="numeroUtente"></h4>
+                </div>
+    
+                <div>
+                    <button class="ms-btn btn btn-light" onclick="calcoloDati(); return false">Inizia</button>
+                </div>
+               
+                <div class="ms-w text-center">
+                    <h3 class="mb-4">Numero AI:</h3>
+                    <h4 id="numeroAi"></h4>
+                </div>
+    
             </div>
+    
+            <div class="d-flex justify-content-center">
+                <div class="pe-5">
+                    <h3 class="mb-4">Vittorie</h3>
+                    <h4 class="text-center" id="vittorie"></h4>
+                </div>
 
-            <div>
-                <h3>Sconfitte</h3>
-                <span id="sconfitte"></span>
+                <div>
+                    <h2 class="text-center px-5" id="risultato"></h2>
+                </div>
+
+                <div class="ps-5">
+                    <h3 class="mb-4">Sconfitte</h3>
+                    <h4 class="text-center" id="sconfitte"></h4>
+                </div>
             </div>
+    
         </div>
 
     </div>
+
+    
 
     
     
